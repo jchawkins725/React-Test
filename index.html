@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Test</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const productList = [
+            {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
+            {category: "Sporting Goods", price: "$9.99", stocked: true, name: "Baseball"},
+            {category: "Sporting Goods", price: "$29.99", stocked: false, name: "Basketball"},
+            {category: "Electronics", price: "$99.99", stocked: true, name: "iPod Touch"},
+            {category: "Electronics", price: "$399.99", stocked: false, name: "iPhone 5"},
+            {category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7"}
+            ];
+        class ProductRow extends React.Component {
+            render () {
+                return
+            }
+        }
+        class ProductCategoryRow extends React.Component {
+            render () {
+                return
+            }
+        }
+        class Table extends React.Component {
+            render () {
+                return 
+            
+            }
+        }
+        class SearchBar extends React.Component {
+            render () {
+                return (
+                    <div>
+                        <input placeholder="Search..."/>
+                        <p>
+                            <input type={"checkbox"}/>
+                            Only show products in stock
+                        </p>
+                    </div>
+                )
+            }
+        }
+        class FilterableProductTable extends React.Component {
+            render () {
+                return (
+                    <SearchBar />
+                );
+            }
+        }
+
+
+        ReactDOM.render(
+        <FilterableProductTable />,
+        document.getElementById('root')
+        );</script>
+  </body>
+</html>
